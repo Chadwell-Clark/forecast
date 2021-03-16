@@ -10,6 +10,9 @@ const EventTarget =document.querySelector("nav");
 
 EventTarget.addEventListener("input", event => {
     console.log(event.target.value)
+    //!  take event.target.value and seach through 
+    //!   useParkData for match and use info to populate
+    //!   itinerary and  get coordinates for weather info
 })
 
 

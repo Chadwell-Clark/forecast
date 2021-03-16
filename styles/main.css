@@ -3,6 +3,8 @@
   Base Element Styles
 ==================================== */
     @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+    @import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Major+Mono+Display&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,7 +37,10 @@ a {
 	color: #fff;
 	text-decoration: none;
 }
-
+option {
+  /* font-family: 'B612 Mono', monospace; */
+  font-family: 'Major Mono Display', monospace;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */

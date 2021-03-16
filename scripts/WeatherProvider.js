@@ -29,12 +29,12 @@ export const getWeatherForecast = (latitude, longitude) => {
             data.daily[i].weather[0].description
         );
         const dailyForecast = `
-        <div>${date.toLocaleString("en-US", { weekday: "short" })}  
-            ${(date.getMonth() + 1)}  
-            ${date.getDate()}  
-            ${date.getFullYear()}  
-            ${data.daily[i].temp.max}  
-            ${data.daily[i].temp.min}  
+        <div>${date.toLocaleString("en-US", { weekday: "short" })}    
+            ${date.getMonth() + 1}-
+            ${date.getDate()}-
+            ${date.getFullYear()}       
+            ${data.daily[i].temp.max.toFixed(0)} --  
+            ${data.daily[i].temp.min.toFixed(0)} &#8457;    
             ${data.daily[i].weather[0].description}</div>
         `;
         DomTarget.innerHTML += dailyForecast;
