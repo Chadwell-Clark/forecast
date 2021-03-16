@@ -30,12 +30,13 @@ export const getWeatherForecast = (latitude, longitude) => {
         );
         const dailyForecast = `
         <div>${date.toLocaleString("en-US", { weekday: "short" })}    
-            ${date.getMonth() + 1}-
-            ${date.getDate()}-
+            ${date.getMonth() + 1} -
+            ${date.getDate()} -
             ${date.getFullYear()}       
             ${data.daily[i].temp.max.toFixed(0)} --  
             ${data.daily[i].temp.min.toFixed(0)} &#8457;    
-            ${data.daily[i].weather[0].description}</div>
+            ${data.daily[i].weather[0].description}
+            <img src="http://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}.png"></div>
         `;
         DomTarget.innerHTML += dailyForecast;
      }
