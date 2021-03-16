@@ -9,7 +9,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px black solid;
+  /* border: 1px black solid; */
 }
     /* ================================= 
   Typography
@@ -40,6 +40,7 @@ a {
 option {
   /* font-family: 'B612 Mono', monospace; */
   font-family: 'Major Mono Display', monospace;
+  font-size: 1.3;
 }
 /* ================================= 
   Base Layout Styles
@@ -59,15 +60,21 @@ option {
 
 }
 .main {
-
+  background:#c2e2f5;
 }
 
 .parks {
   padding: auto;
 }
+.weather {
+  
+}
 .container {
   padding-left: 1em;
   padding-right: 1em;
+  /* font-family: 'Major Mono Display', monospace; */
+  font-family: 'B612 Mono', monospace; 
+  font-size: 1.6;
 }
 
 
