@@ -47,18 +47,14 @@ option {
 ==================================== */
 
 /* ---- Layout Containers ---- */
-.wrap {
 
-}
 .header {
 	padding: 1.5em 0;
 	background: #3acec2;
   width:100%;
   text-align: center;
 }
-.nav {
 
-}
 .main {
   background:#c2e2f5;
 }
@@ -66,15 +62,20 @@ option {
 .parks {
   padding: auto;
 }
-.weather {
-  
+#weather {
+  border: solid black 1px;
 }
 .container {
-  padding-left: 1em;
-  padding-right: 1em;
-  /* font-family: 'Major Mono Display', monospace; */
+  padding: 0 1em;
+ 
+  /* font-family: 'Space Mono','Major Mono Display', monospace; */
   font-family: 'B612 Mono', monospace; 
   font-size: 1.6;
+
+}
+
+.icon {
+  width: 35px;
 }
 
 
