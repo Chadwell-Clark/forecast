@@ -70,11 +70,16 @@ option {
   
 }
 .container {
-  padding-left: 1em;
-  padding-right: 1em;
-  /* font-family: 'Major Mono Display', monospace; */
+  padding: 0 1em;
+ 
+  /* font-family: 'Space Mono','Major Mono Display', monospace; */
   font-family: 'B612 Mono', monospace; 
   font-size: 1.6;
+
+}
+
+.icon {
+  width: 35px;
 }
 
 

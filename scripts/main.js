@@ -1,6 +1,7 @@
 console.log("Welcome to the main module")
 import { getWeatherForecast } from "./WeatherProvider.js";
 import { getParkData ,useParkData} from "./ParkProvider.js";
+import { showWeather } from "./WeatherList.js";
 
 
 const latitude = 36.1659
@@ -19,30 +20,37 @@ EventTarget.addEventListener("input", event => {
 const startWheelsInParks = () => {
      getParkData()
         .then(parkData => {
-        console.log(parkData)
+        // console.log(parkData)
         // console.log(parkData.data);
         parkData.data.forEach(element => {
-            console.log(element)  
+            // console.log(element)  
         });
         const DOMTarget = document.querySelector("#parks");
         for(const park of parkData.data) {
-            console.log(`
-            ${park.parkCode}   
-            lat: ${latitude}   
-            long: ${longitude}   
-            ${park.fullName}   
-            `);
+            // console.log(`
+            // ${park.parkCode}   
+            // lat: ${latitude}   
+            // long: ${longitude}   
+            // ${park.fullName}   
+            // `);
             const select = `
-            <option value="parkCode--${park.parkCode}">${park.fullName}</option>
+            <option value="${park.parkCode}">${park.fullName}</option>
             `
             DOMTarget.innerHTML += select;
 
         }
     })
     .then(() => {
-        getWeatherForecast(latitude, longitude);
+        getWeatherForecast(latitude, longitude)
+        .then(data => {
+            showWeather(data);
+        })
         // useParkData();
-    });
+    })
+    // .then(() => {
+    //     renderWeather();
+
+    // })
 }
 
 startWheelsInParks();

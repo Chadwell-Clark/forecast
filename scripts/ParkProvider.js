@@ -5,7 +5,7 @@ let parkCollection = []
 export const useParkData = () => {
     
     const parkDataCopy = [...parkData];
-    console.log(parkDataCopy);
+    // console.log(parkDataCopy);
     return parkDataCopy;
 }
 export const getParkData = () => {
