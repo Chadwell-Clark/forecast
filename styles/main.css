@@ -47,18 +47,14 @@ option {
 ==================================== */
 
 /* ---- Layout Containers ---- */
-.wrap {
 
-}
 .header {
 	padding: 1.5em 0;
 	background: #3acec2;
   width:100%;
   text-align: center;
 }
-.nav {
 
-}
 .main {
   background:#c2e2f5;
 }
@@ -66,8 +62,8 @@ option {
 .parks {
   padding: auto;
 }
-.weather {
-  
+#weather {
+  border: solid black 1px;
 }
 .container {
   padding: 0 1em;
